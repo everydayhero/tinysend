@@ -7,6 +7,7 @@ var app = express()
 var jsonParser = bodyParser.json()
 
 var mandrillClient = new mandrill.Mandrill(process.env.MANDRILL_KEY)
+var port = process.env.PORT || 8080
 
 app.post('/send-email', jsonParser, function (req, res) {
   fetch('https://heroix.everydayhero.com.au/donations/' + req.body.entity.id + '.pdf?token=' + req.body.entity.token)
@@ -48,6 +49,6 @@ app.get('/health', function (req, res) {
   return res.sendStatus(200)
 })
 
-app.listen(80, function () {
-  console.log('Listening on port 80')
+app.listen(port, function () {
+  console.log('Listening on port ' + port)
 })
