@@ -1,0 +1,23 @@
+{
+  "name": "tinysend",
+  "version": "1.0.0",
+  "description": "Whitelist-based Mandrill email sending API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/everydayhero/tinysend.git"
+  },
+  "author": "Ellis Clayton",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/everydayhero/tinysend/issues"
+  },
+  "homepage": "https://github.com/everydayhero/tinysend#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
