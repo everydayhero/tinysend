@@ -18,6 +18,8 @@
   "homepage": "https://github.com/everydayhero/tinysend#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "mandrill-api": "^1.0.45",
+    "node-fetch": "^1.5.1"
   }
 }
