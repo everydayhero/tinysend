@@ -26,10 +26,7 @@ app.post('/send-email', jsonParser, function (req, res) {
           template_name: req.body.template_name,
           template_content: [],
           message: {
-            global_merge_vars: [{
-              name: 'donorName',
-              content: req.body.entity.donor_name
-            }],
+            global_merge_vars: req.body.entity.merge_vars,
             subject: req.body.entity.subject,
             from_email: 'help@everydayhero.com.au',
             from_name: req.body.entity.sender_name,
